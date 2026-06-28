@@ -37,7 +37,7 @@
                     <th>Penandatangan</th>
                     <th>Instansi</th>
                     <th>Diperiksa Oleh</th>
-                    <th>IP Address</th>
+                    <th>Keterangan</th>
                     <th>Waktu</th>
                 </tr>
             </thead>
@@ -63,7 +63,7 @@
                         <div style="font-size:.85rem">{{ $log->user->name ?? 'Dihapus' }}</div>
                         <div style="font-size:.72rem;color:#8892a4">{{ $log->user->email ?? '' }}</div>
                     </td>
-                    <td style="font-size:.8rem;color:#8892a4">{{ $log->ip_address ?? '-' }}</td>
+                    <td style="font-size:.8rem;color:#8892a4">{{ $log->keterangan ?? '-' }}</td>
                     <td style="white-space:nowrap;font-size:.8rem;color:#8892a4">
                         {{ $log->created_at->format('d/m/Y H:i') }}
                     </td>
